@@ -6,4 +6,9 @@ $(document).ready(function(){
     $("#carousel-play").click(function(){
         $("#mycarousel").carousel('cycle');
     });
+
+    $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
+    $('#grid').click(function(event){
+        event.preventDefault();$('#products .item').removeClass('list-group-item');
+    $('#products .item').addClass('grid-group-item');});
 });
