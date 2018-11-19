@@ -72,8 +72,11 @@ tr:hover {background-color:#dbb08db0!important}
     padding-left: 0;
     margin-bottom: 0;
 }
+
+
 .thumbnail
 {
+    background-color:#ECE4B7;
     margin-bottom: 30px;
     padding: 0px;
     -webkit-border-radius: 0px;
@@ -85,7 +88,7 @@ tr:hover {background-color:#dbb08db0!important}
 {
     float: none;
     width: 100%;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -123,4 +126,48 @@ tr:hover {background-color:#dbb08db0!important}
 .item.list-group-item:after
 {
     clear: both;
+}
+
+ /* info button */
+ .btn-info-new {
+    background-color: #FFF;
+    color: #269abc;
+    border-color: #39b3d7;
+    border-radius: 25px;
+}
+.btn-info-new:hover,
+.btn-info-new:focus,
+.btn-info-new:active    {
+    background-color: #39b3d7;
+    color: #FFF;
+    border-color: #269abc;
+}
+/* danger button */
+.btn-danger-new{
+    background-color: #FFF;
+    color: #ac2925;
+    border-color: #d2322d;
+    border-radius: 25px;
+}
+.btn-danger-new:hover,
+.btn-danger-new:focus,
+.btn-danger-new:active {
+    background-color: #d2322d;
+    color: #FFF;
+    border-color: #ac2925;
+}
+
+/* success button */
+.btn-success-new {
+    background-color: #FFF;
+    color: #398439;
+    border-color: #47a447;
+    border-radius: 25px;
+}
+.btn-success-new:hover,
+.btn-success-new:focus,
+.btn-success-new:active    {
+    background-color: #47a447;
+    color: #FFF;
+    border-color: #398439;
 }

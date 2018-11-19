@@ -11,4 +11,5 @@ $(document).ready(function(){
     $('#grid').click(function(event){
         event.preventDefault();$('#products .item').removeClass('list-group-item');
     $('#products .item').addClass('grid-group-item');});
+    $('#addCard').click(function(event){event.preventDefault();$('#productsCard .item').addClass('list-group-item');});
 });

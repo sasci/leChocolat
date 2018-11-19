@@ -8,9 +8,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
 
     <title>Le Chocolat: Contact Us</title>
 
@@ -19,7 +21,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Le Chocolat</a>
+            <a class="navbar-brand" href="./index.html"><img src="images/logo.png" height="40" width="54"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,6 +49,7 @@
                         recipes. Our creations will travel you in the chocolate world!</p>
                 </div>
                 <div class="col col-sm">
+                    <img src="images/logo.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -216,9 +219,13 @@
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/tether/dist/js/tether.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- build:js js/main.js -->
+ <script src="node_modules/jquery/dist/jquery.min.js"></script>
+ <script src="node_modules/tether/dist/js/tether.min.js"></script>
+ <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ <script src="js/scripts.js"></script>
+ <!-- endbuild -->
 </body>
 
 </html>

@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
     <title>Le Chocolat</title>
 
 </head>
@@ -49,13 +51,13 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div id="products" class="row view-group">
+                        <div id="productsCard" >
                             <div class="form-group row">
                                 <div class="item col-xs-4 col-lg-4">
                                     <div class="thumbnail card">
                                         <div class="img-event">
-                                            <img class="group list-group-image img-fluid" src="images/chocolate-1.jpg"
-                                                alt="" />
+                                            <img class="group list-group-image img-fluid" src="images/chocolate-2.jpg"
+                                                style="width: 400px; height: 250px;" alt="" />
                                         </div>
                                         <div class="caption card-body">
                                             <h4 class="group card-title inner list-group-item-heading">
@@ -66,7 +68,10 @@
                                                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
                                                 erat volutpat.</p>
                                             <div class="row">
-                                                    <p class="lead">$21.000</p>
+                                                <div class="col-xs-12">
+                                                    <p class="lead">
+                                                        $21.000</p>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -77,7 +82,8 @@
                                 <div class="item col-xs-4 col-lg-4">
                                     <div class="thumbnail card">
                                         <div class="img-event">
-                                                <img class="group list-group-image img-fluid" src="images/chocolate-2.jpg" style="width: 300px; height: 200px;" alt="" />
+                                            <img class="group list-group-image img-fluid" src="images/chocolate-2.jpg"
+                                                style="width: 400px; height: 250px;" alt="" />
                                         </div>
                                         <div class="caption card-body">
                                             <h4 class="group card-title inner list-group-item-heading">
@@ -103,7 +109,7 @@
                                     <div class="thumbnail card">
                                         <div class="img-event">
                                             <img class="group list-group-image img-fluid" src="images/chocolate-3.jpg"
-                                                alt="" />
+                                                style="width: 400px; height: 250px;" alt="" />
                                         </div>
                                         <div class="caption card-body">
                                             <h4 class="group card-title inner list-group-item-heading">
@@ -169,10 +175,10 @@
             <div class="col-lg-12 my-3">
                 <div class="pull-right">
                     <div class="btn-group">
-                        <button class="btn btn-info" id="list">
+                        <button class="btn btn-info-new" id="list">
                             List View
                         </button>
-                        <button class="btn btn-danger" id="grid">
+                        <button class="btn btn-danger-new" id="grid">
                             Grid View
                         </button>
                     </div>
@@ -183,7 +189,8 @@
             <div class="item col-xs-4 col-lg-4">
                 <div class="thumbnail card">
                     <div class="img-event">
-                        <img class="group list-group-image img-fluid" src="images/chocolate-1.jpg" alt="" />
+                        <img class="group list-group-image img-fluid" src="images/chocolate-1.jpg" style="width: 400px; height: 250px;"
+                            alt="" />
                     </div>
                     <div class="caption card-body">
                         <h4 class="group card-title inner list-group-item-heading">
@@ -198,7 +205,7 @@
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <a role="button" data-toggle="modal" data-target="#addToCard">
-                                    <input type="button" value="Add to cart" class="btn btn-success"></a>
+                                    <input id="addCard" type="button" value="Add to cart" class="btn btn-success-new"></a>
                             </div>
                         </div>
                     </div>
@@ -207,7 +214,8 @@
             <div class="item col-xs-4 col-lg-4">
                 <div class="thumbnail card">
                     <div class="img-event">
-                        <img class="group list-group-image img-fluid" src="images/chocolate-2.jpg" style="width: 300px; height: 200px;" alt="" />
+                        <img class="group list-group-image img-fluid" src="images/chocolate-2.jpg" style="width: 400px; height: 250px;"
+                            alt="" />
                     </div>
                     <div class="caption card-body">
                         <h4 class="group card-title inner list-group-item-heading">
@@ -222,7 +230,7 @@
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <a role="button" data-toggle="modal" data-target="#addToCard">
-                                    <input type="button" value="Add to cart" class="btn btn-success"></a>
+                                    <input type="button" value="Add to cart" class="btn btn-success-new"></a>
                             </div>
                         </div>
                     </div>
@@ -231,7 +239,8 @@
             <div class="item col-xs-4 col-lg-4">
                 <div class="thumbnail card">
                     <div class="img-event">
-                        <img class="group list-group-image img-fluid" src="images/chocolate-3.jpg" alt="" />
+                        <img class="group list-group-image img-fluid" src="images/chocolate-3.jpg" style="width: 400px; height: 250px;"
+                            alt="" />
                     </div>
                     <div class="caption card-body">
                         <h4 class="group card-title inner list-group-item-heading">
@@ -246,7 +255,7 @@
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <a role="button" data-toggle="modal" data-target="#addToCard">
-                                    <input type="button" value="Add to cart" class="btn btn-success"></a>
+                                    <input type="button" value="Add to cart" class="btn btn-success-new"></a>
                             </div>
                         </div>
                     </div>
@@ -255,7 +264,8 @@
             <div class="item col-xs-4 col-lg-4">
                 <div class="thumbnail card">
                     <div class="img-event">
-                        <img class="group list-group-image img-fluid" src="images/chocolate-4.jpg" alt="" />
+                        <img class="group list-group-image img-fluid" src="images/chocolate-4.jpg" style="width: 400px; height: 250px;"
+                            alt="" />
                     </div>
                     <div class="caption card-body">
                         <h4 class="group card-title inner list-group-item-heading">
@@ -270,7 +280,7 @@
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <a role="button" data-toggle="modal" data-target="#addToCard">
-                                    <input type="button" value="Add to cart" class="btn btn-success"></a>
+                                    <input type="button" value="Add to cart" class="btn btn-success-new"></a>
                             </div>
                         </div>
                     </div>
@@ -279,7 +289,8 @@
             <div class="item col-xs-4 col-lg-4">
                 <div class="thumbnail card">
                     <div class="img-event">
-                        <img class="group list-group-image img-fluid" src="images/chocolate-5.jpg" alt="" />
+                        <img class="group list-group-image img-fluid" src="images/chocolate-5.jpg" style="width: 400px; height: 250px;"
+                            alt="" />
                     </div>
                     <div class="caption card-body">
                         <h4 class="group card-title inner list-group-item-heading">
@@ -294,7 +305,7 @@
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <a role="button" data-toggle="modal" data-target="#addToCard">
-                                    <input type="button" value="Add to cart" class="btn btn-success"></a>
+                                    <input type="button" value="Add to cart" class="btn btn-success-new"></a>
                             </div>
                         </div>
                     </div>
@@ -303,7 +314,8 @@
             <div class="item col-xs-4 col-lg-4">
                 <div class="thumbnail card">
                     <div class="img-event">
-                        <img class="group list-group-image img-fluid" src="images/chocolate-6.jpg" alt="" />
+                        <img class="group list-group-image img-fluid" src="images/chocolate-6.jpg" style="width: 400px; height: 250px;"
+                            alt="" />
                     </div>
                     <div class="caption card-body">
                         <h4 class="group card-title inner list-group-item-heading">
@@ -318,7 +330,7 @@
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <a role="button" data-toggle="modal" data-target="#addToCard">
-                                    <input type="button" value="Add to cart" class="btn btn-success"></a>
+                                    <input type="button" value="Add to cart" class="btn btn-success-new"></a>
                             </div>
                         </div>
                     </div>
@@ -377,11 +389,13 @@
         </div>
     </footer>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
